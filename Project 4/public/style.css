@@ -1,0 +1,197 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    width: 1350px;
+    margin-top: 5px;
+    display: flex;
+    margin-right: 20px;
+}
+.nav-logo{
+    height: 70px;
+    width: 100px;
+    margin-left: 10px;
+}
+.logo-img{
+    position: relative;
+    bottom: 45px;
+    right: 50px;
+}
+.menu-list{
+    width: 1000px;
+    height: 70px;
+}
+#menu-1{
+    display: flex;
+    list-style-type: none;
+}
+.list-1{
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.list-1 a{
+    text-decoration: none;
+    color: grey;
+}
+.select1{
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 12px;
+    border: none;
+    color: grey;
+}
+.icons{
+    margin-left: 20px;
+    height: 70px;
+    width: 200px;
+}
+.icons img{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.h2{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.container1{
+    height: 400px;
+    width: auto;
+    display: flex;
+}
+.boxx{
+    height: 300px;
+    width: 250px;
+    margin: auto;
+    margin-top: 10px;
+}
+.img-div{
+    height: 200px;
+    width: auto;
+}
+.content{
+    height: 120px;
+    width: auto;
+}
+.Product-define{
+    text-align: center;
+    font-size: 13px;
+    padding-top: 6px;
+}
+#price{
+    text-align: center;
+}
+.discount{
+    text-align: center;
+}
+.spam1{
+    color: red;
+}
+.multi-button{
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    margin-left: 60px;
+    background-color: rgb(160, 192, 160);
+    font-size: 12px;
+    border: none;
+}
+.multi-button:hover{
+    background-color: rgb(66, 143, 66);
+    transition-duration: 2s;
+}
+.container2{
+    height: 500px;
+    width: auto;
+    margin-top: 50px;
+    border-bottom: 50px;
+}
+.container3{
+    height: 400px;
+    width: auto;
+    display: flex;
+}
+#price1{
+    text-align: center; 
+}
+.rate{
+    text-align: center;
+}
+.multi-button1{
+    margin-top: 40px;
+    height: 40px;
+    margin-left: 60px;
+    width: 120px;
+    border-radius: 10px;
+    border: none;
+    font-size: 12px;
+    background-color: rgb(160, 192, 160);
+}
+.multi-button1:hover{
+    background-color: rgb(66, 143, 66);
+    transition-duration: 2s;
+}
+.container4{
+    height: 500px;
+    width: auto;
+}
+.container5{
+    height: 600px;
+    width: 1400px;
+    margin-top: 100px;
+}
+.container5 img{
+    width: 1350px;
+}
+.container6{
+    height: 600px;
+    width: auto;
+}
+.container6 img{
+    width: 1350px;
+}
+footer{
+    height: 350px;
+    width: auto;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+    background-image: url(https://media.istockphoto.com/id/1147521090/photo/empty-white-studio-room-abstract-background.jpg?s=612x612&w=0&k=20&c=YNFVwi9y-7M4n4T7hBKA4XwvcECPHuOWcONbsDqJNco=);
+}
+.footdiv{
+    height:250px ;
+    width: 350px;
+    margin-top: 50px;
+}
+.foot-p{
+    font-size: 22px;
+    padding-top: 22px;
+    padding-left: 25px;
+}
+#last-p{
+    padding-left: 10px;
+}
+input{
+    height: 50px;
+    width: 280px;
+    position: relative;
+    left: 10px;
+}
+#foot-button{
+    height: 50px;
+    width: 280px;
+    margin-top: 10px;
+    position: relative;
+    left: 10px;
+    border: none;
+    background-color: grey;
+}
+.last-items{
+    list-style: none;
+}
+.footdiv img{
+    margin-left: 10px;
+}

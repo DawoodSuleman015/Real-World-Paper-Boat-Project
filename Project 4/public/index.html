@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="data:image/png;base64,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">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Paper Boat</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+           <img class="logo-img" src="../logo1.png" height="150px">
+        </div>
+        <div class="menu-list">
+            <ul id="menu-1">
+                <li class="list-1"><a href="#">Home</a></li>
+                <select class="select1">
+                    <option  class="option1" value="Nuts Seeds & Berries">Nuts Seeds & Berries</option>
+                    <option  class="option1" value="Almonds">Almonds</option>
+                    <option  class="option1" value="Bundles">Bundles</option>
+                    <option  class="option1" value="Supermixes">Supermixes</option>
+                    <option  class="option1" value="Trailmixes">Trailmixes</option>
+                </select>
+                <select class="select1">
+                    <option class="option1" value="Gift Galore">Gift Galore</option>
+                    <option class="option1" value="Gift Packs">Gift Packs</option>
+                    <option class="option1" value="Gift Order">Gift Orders</option>
+                </select>
+                <select class="select1">
+                    <option  class="option1" value="Indian Kitchen">Indian Kitchen</option>
+                    <option  class="option1"value="Chikki">Chikki</option>
+                    <option  class="option1"value="Aam Papad">Aam Papad</option>
+                </select>
+                <li class="list-1"><a href="#">Nuts about Deals</a></li>
+                <li class="list-1"><a href="#">Top in Class !</a></li>
+                <li class="list-1"><a href="#">Where's my Snacks</a></li>
+            </ul>
+        </div>
+        <div class="icons">   
+           <img src="data:image/png;base64,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" height="17px" alt="Icons">
+           <img src="data:image/png;base64,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" alt="Icon" height="17px">
+           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX///8CAgLY2NhFRUX19fX8/PxKSkr5+fkEBAQsLCwTExMcHBwWFhYlJSUICAgpKSnt7e2AgIDj4+NBQUGHh4fc3NzR0dGQkJBfX18aGhowMDCvr6/n5+c6OjpwcHB4eHjGxsaWlpajo6NTU1O9vb1lZWWlpaWzs7NaWlrBwcGbm5t9cLXyAAAEQUlEQVR4nO3caXeiMBgF4KCmotatLlXca23H/v8fONoRcCFgbd7lMPf5MvOhnpNbbgkmgDEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACDEmtpw0W1ciVZz6YH58xJkG0sPzJuBI2FQOxzfMnAdwiB4kx6aJ2tnwoH00DwZORMGZTnZVJ0Jv6SH5ofN+EMM//2zkB6bH9b0htF0+pyaJklfpAdHpR8n3EiPhMo4ThiVZEa81YwjjqRHQiWp6av0SKic1bSskgmjIj0SKv04YUlratOatqXHQqYVR6yUdcIYxpdvQ+mRUElq2izrMbTtOGJ5FjOuDOOE5a9pq6wtTa9Ny1/TvvNHbJH6T1jDfFJLatqJoqibap9pnST/OXhupjoZwtslhdNZeze3vBGn8ZTIpl1nDZjWlA/zn3yl9AlNlz1hjzkhe023zAH5azrjTsheU+6SGvPKG7DKHpC7pvy7eTb9ps9CYquLtaYi25U5e4v+yezlRYwJZXYQ2GoaSm1WstU0FFt75qup1FLChiug2OI6W02llvSsaTAllCqp5TqbdoQCmrybwjw6bo/ILcvy1FRyJ3bDEbAtuf/DcjaV3RxZMCSUvV1gQx9Q9JYPy1FT6fsh6GsqfevVhjpgVzgg/aQvXVL6mkqX1Jgv2oDiJSWvqXxJqWuq4e5A0po2pNMdEdZUbgnqkvPZKA80lJS0pl0dN84R1lRHSSlrqqOkxrxRBWxJJ4vNqRJqKSndpK+lpEQ1DTVck8aIaqqnpMY8kSTUU1JjPigCqrgmPbEkNdV1EzlFTXXdYU1QU2XPHBHUVFdJ8x5rf5SuklLUVDrRtZ7vgNpK6v9squ9x/5nfgPy3BBdKa7p4cqkWGRxVt7vhSMfyxaVtnNDLBbPCgGlNRffdKaWTflleXXNjq/gs4UdS04n0SKikZ9Oa9FCoJDVdS4+EyqmmYc6TpYV0n4aTmkaVx8zr2iMmNX3U824vnSHf528THnTXhvmJ3x+wq98HDIOgrzWhtZPfB/ymdj5deXu0e6XzfPPuKd7Ru3SYDNb6fFqvo/EYfmZ39KHihiov3l1zYaVeyzFy/AqepOPcsq7j8ZH7MefqDv+DzUWcNwuvcj5k0xf4XddU23pwzvt4/+R8yBrnFKrvbOqcK/LfhbB1nYr0JRxnDzQIdjkfsmbp+pi+K3Dn5lP+6vzG9TH5W4NvuIaaX7e9o6VN5vftFHOeFQvWbLInmTBYKrwydbxFIm+yOHL8YvRNFodf+S7rWBRuIfUyL+zYX0Zzl4wdxPCOF0Znbq0qXTXf3x6Oe77LLoOLzx3/q28y/GZvl2kmd5wurL2pt8YvFifjy++Id22z2etJsTlWeB5N1M/u+Z7cP2m/nF2ebtTNhOesNXY9fIoag+Wsd/+i4OEHe7NltRFt+3vFhw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA4P/1Fxf/QYAdLYVxAAAAAElFTkSuQmCC" alt="Icon" height="27px">
+        </div>
+    </nav>
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.paperboatfoods.com/cdn/shop/files/2000x900_Desktop_1500x.png?v=1669645765" class="d-block w-100" alt="Comapny Poster">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.paperboatfoods.com/cdn/shop/files/Dry_Fruits_2000x900-2_1500x.jpg?v=1690891281" class="d-block w-100" alt="Comapny Poster">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h2 class="h2">New Pinch !</h2>
+      <div class="container1">
+        <div class="boxx">
+            <div class="img-div">
+                <img class="img1" src="https://www.paperboatfoods.com/cdn/shop/files/B08891WHBG.PT04_300x.jpg?v=1697635448" alt="Products" height="200px" width="240px">
+            </div>
+            <div class="content">
+                <p class="Product-define">Crushed Peanut Chikki family <br>( 6 Pieces , 16g each ) Pack of 5 Combo</p>
+                <p id="price">MRP ₹ 210.00</p>
+                 <button class="multi-button1"> Add To Cart</button>
+            </div>
+        </div>
+        <div class="boxx">
+            <div class="img-div">
+                <img class="img2" src="https://www.paperboatfoods.com/cdn/shop/files/Image1_300x.jpg?v=1699955320" alt="Products" height="200px" width="240px">
+            </div>
+            <div class="content">
+                <p class="Product-define">Paper Boat Diwali Dry Fruit Gift Box, <br> 260g- Premium Collection</p>
+                <p class="discount"><del>MRP ₹ 650.00 </del><span class="spam1"> -35 %</span></p>
+                <p class="rate">&#8377; 422</p>
+                <button class="multi-button">Add To Cart</button>
+            </div>
+        </div>
+        <div class="boxx">
+            <div class="img-div">
+                <img  class="img3" src="https://www.paperboatfoods.com/cdn/shop/files/01_2ffb808a-9260-4c66-8c90-91e2fea626fc_300x.jpg?v=1694168785" alt="Products" height="200px" width="240px">
+            </div>
+            <div class="content">
+                <p class="Product-define">Paper Boat Diwali Dry Fruit Gift Box, <br> 390g- Gourmet Collection</p>
+                <p class="discount"><del>MRP ₹ 900.00</del><span class="spam1"> -35 %</span></p>
+                <p class="rate">&#8377; 587</p>
+                <button class="multi-button">Add To Cart</button>
+            </div>
+        </div>
+        <div class="boxx">
+            <div class="img-div">
+                <img  class="img4" src="https://www.paperboatfoods.com/cdn/shop/files/01_a5ddb379-090e-478a-9bed-26864083f48d_300x.jpg?v=1694168920" alt="Products" height="200px" width="240px">
+            </div>
+            <div class="content">
+                <p class="Product-define">Paper Boat Diwali Dry Fruits Gift Box, <br> 720g-Exquisite collection</p>
+                <p class="discount"><del>MRP ₹ 1,700.00</del><span class="spam1"> -35 %</span></p>
+                <p class="rate">&#8377; 1105</p>
+                <button class="multi-button">Add To Cart</button>
+            </div>
+        </div>
+      </div>
+      <div class="container2">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://www.paperboatfoods.com/cdn/shop/files/2022_PB_BANNER_02FEB_02-min_1_11zon_1500x.jpg?v=1668668872" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.paperboatfoods.com/cdn/shop/files/2022_PB_BANNER_02FEB_04-min_2_11zon_1500x.jpg?v=1668668514" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.paperboatfoods.com/cdn/shop/files/2022_PB_BANNER_02FEB_01-min_3_11zon_1500x.jpg?v=1668669193" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+       </div>
+       <h2 class="h2">Top in Class</h2>
+        <div class="container3">
+            <div class="boxx">
+                <div class="img-div">
+                    <img class="img1" src="https://www.paperboatfoods.com/cdn/shop/products/1_1bd5b1a6-b529-4965-b1dc-701ec1000302.jpg?v=1659090808" alt="Products" height="200px" width="240px">
+                </div>
+                <div class="content">
+                    <p class="Product-define">Salted California Pistachio (800gm Jar)</p>
+                    <p id="price1">MRP ₹1,312</p>
+                     <button class="multi-button1"> Add To Cart</button>
+                </div>
+            </div>
+            <div class="boxx">
+                <div class="img-div">
+                    <img class="img2" src="https://www.paperboatfoods.com/cdn/shop/products/ProteinCrunchSupermix_1kgJar.jpg?v=1675765690" alt="Products" height="200px" width="240px">
+                </div>
+                <div class="content">
+                    <p class="Product-define">Protein Crunch Supermix (1kg Jar)
+                    </p>
+                    <p class="discount"><del>MRP ₹ 1,800.00</del><span class="spam1"> -38%</span></p>
+                    <p class="rate">&#8377; 1,116</p>
+                    <button class="multi-button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="boxx">
+                <div class="img-div">
+                    <img  class="img3" src="https://www.paperboatfoods.com/cdn/shop/products/AbsoluteHealthSupermix_1kgJar.jpg?v=1675765747" alt="Products" height="200px" width="240px">
+                </div>
+                <div class="content">
+                    <p class="Product-define">Absolute Health Supermix </p>
+                    <p class="discount"><del>MRP ₹ 1,800.00</del><span class="spam1"> -39%</span></p>
+                    <p class="rate">&#8377; 1,098</p>
+                    <button class="multi-button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="boxx">
+                <div class="img-div">
+                    <img  class="img4" src="https://www.paperboatfoods.com/cdn/shop/products/SmokedNutswithHimalayanPinkSalt_1kgjar_600x.jpg?v=1675765563" alt="Products" height="200px" width="240px">
+                </div>
+                <div class="content">
+                    <p class="Product-define">Smoked Nuts with Himalayan Pink Salt </p>
+                    <p class="discount"><del>MRP ₹ 1,700.00</del><span class="spam1"> -34 %</span></p>
+                    <p class="rate">&#8377; 1,170</p>
+                    <button class="multi-button">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="container4">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://www.paperboatfoods.com/cdn/shop/files/Teacher_Review_PB_Webiste_Desktop_1500x.jpg?v=1652421650" class="d-block w-100" alt="Company Poster">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.paperboatfoods.com/cdn/shop/files/Software_Engineer_Review_PB_Webiste_Desktop_1500x.jpg?v=1652421650" class="d-block w-100" alt="Company Poster">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://www.paperboatfoods.com/cdn/shop/files/Gym_trainer_Review_PB_Webiste_Desktop_1500x.jpg?v=1652421650" class="d-block w-100" alt="Company Poster">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="container5">
+            <img src="https://www.paperboatfoods.com/cdn/shop/files/PB_Creative_Website_2000x750_transparent_bc6814f5-df33-4f07-a102-60ce5c710978_1500x.png?v=1652419839" alt="Company Poster">
+        </div>
+        <div class="container6">
+            <img src="https://www.paperboatfoods.com/cdn/shop/files/Creatives_2000x750_9dd6fd6d-35a1-4736-b88d-ea34f385041e_1500x.png?v=1645432161" alt="Comapny Poster">
+        </div>
+        <footer>
+            <div class="footdiv">
+                <p class="foot-p">Sign In</p>
+                <p id="last-p">We’re on a nutty adventure filled with <br>all things fun!</p>
+                <input type="email" name="email" value="&nbsp; &nbsp;Email">
+                <button id="foot-button">Sigh In</button>
+            </div>
+            <div class="footdiv">
+                <p class="foot-p">Shop</p>
+                <ul class="last-items">
+                   <li class="ll-1">Almonds</li>
+                   <li class="ll-1">Top in Class !</li>
+                   <li class="ll-1">Bundles</li>
+                   <li class="ll-1">Indian Kitchen</li>
+                   <li class="ll-1">New In</li>
+                   <li class="ll-1">Nuts about Deals</li>
+                   <li class="ll-1">Nuts,Seed,Berries</li>
+                </ul>
+            </div>
+            <div class="footdiv">
+                <p class="foot-p">Links</p>
+                <ul class="last-items">
+                    <li class="ll-1">Blog</li>
+                    <li class="ll-1">Memories & More</li>
+                    <li class="ll-1">Search</li>
+                    <li class="ll-1">Conatct Us</li>
+                    <li class="ll-1">Privacy and Policy</li>
+                    <li class="ll-1">Refund Policy</li>
+                    <li class="ll-1">Shipping Policy</li>
+                    <li class="ll-1">Terms & Service</li>
+                    
+                </ul>
+            </div>
+            <div class="footdiv">
+                <p class="foot-p">Social</p>
+                 <img src="../fa-PhotoRoom.png-PhotoRoom.png" height="40px">
+                 <img src="../in-PhotoRoom.png-PhotoRoom.png" height="30px">
+            </div>
+        </footer>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
